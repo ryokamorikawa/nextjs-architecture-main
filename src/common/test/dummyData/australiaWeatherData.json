@@ -1,0 +1,49 @@
+{
+  "coord": {
+    "lon": 135,
+    "lat": -25
+  },
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "01n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 286.95,
+    "feels_like": 285.27,
+    "temp_min": 286.95,
+    "temp_max": 286.95,
+    "pressure": 1023,
+    "humidity": 34,
+    "sea_level": 1023,
+    "grnd_level": 991
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 3.21,
+    "deg": 67,
+    "gust": 3.32
+  },
+  "rain": {
+    "1h": 3.16
+  },
+  "clouds": {
+    "all": 0
+  },
+  "dt": 1689255135,
+  "sys": {
+    "type": 2,
+    "id": 2075663,
+    "country": "AU",
+    "sunrise": 1689198282,
+    "sunset": 1689236771
+  },
+  "timezone": 34200,
+  "id": 2077456,
+  "name": "Australia",
+  "cod": 200
+}

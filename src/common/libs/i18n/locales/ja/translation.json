@@ -1,0 +1,60 @@
+{
+  "title": "Next.js サンプル",
+  "auth": {
+    "sign-in": "サインイン",
+    "sign-out": "サインアウト",
+    "forgot-password": "パスワードをお忘れですか？",
+    "register": "ユーザ登録がまだの方はこちら",
+    "pssword-reset-screen-title": "パスワード再設定画面",
+    "password-reset-button": "パスワード再設定",
+    "password-reset-message": "パスワード再設定メールを送信しました。",
+    "back-home-link": "ホームへ戻る",
+    "register-screen-title": "ユーザ登録",
+    "register-button": "新規登録"
+  },
+  "favorite": {
+    "title": "Firestore",
+    "get-stream-data": "Favoritesデータ取得（ストリームデータ）",
+    "add-data": "Firestoreデータ送信",
+    "favorites-list": {
+      "document-id": "ドキュメントID",
+      "message": "メッセージ",
+      "date": "日時",
+      "user-id": "ユーザID"
+    }
+  },
+  "weather": {
+    "serch-bar-placeholder": "都市名を入力してください",
+    "title": "Weather in ",
+    "feels-like": "体感気温",
+    "humidity": "湿度",
+    "winds-speed": "風速"
+  },
+  "error": {
+    "reset": "再試行",
+    "not-found-message": "ページが見つかりません",
+    "top-page-link-label": "トップページ",
+    "contact-us-link-label": "お問い合わせ",
+    "firebase": {
+      "firestore": {
+        "unauthenticated": "操作に有効な認証情報がありません。サインインし直してください。",
+        "already-exists": "処理に失敗しました。再実行してください。エラーが出続ける場合はシステム管理者に連絡してください。",
+        "resource-exhausted": "処理に失敗しました。時間をおいて再実行してください。エラーが出続ける場合はシステム管理者に連絡してください。",
+        "unavailable": "処理に失敗しました。。時間をおいて再実行してください。エラーが出続ける場合はシステム管理者に連絡してください。"
+      },
+      "auth": {
+        "auth/wrong-password": "ユーザーIDまたはパスワードが不正です。",
+        "auth/user-not-found": "ユーザーIDが不正です。ユーザーは削除された可能性があります。",
+        "auth/invalid-email": "'@'を含むメールアドレスを入力してください。",
+        "auth/weak-password": "入力されたパスワードはパスワード要件を満たしていません。",
+        "auth/missing-password": "パスワードを入力してください。",
+        "auth/missing-email": "メールアドレスを入力してください。",
+        "auth/email-already-in-use": "メールアドレスはすでに別のアカウントで使用されています。"
+      }
+    },
+    "validation": {
+      "invalid-city-name": "都市名は大文字または小文字のアルファベットで入力してください。"
+    },
+    "unknown-exception": "予期せぬエラーが発生しました。<br/>システム管理者に連絡してください。"
+  }
+}

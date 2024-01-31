@@ -1,0 +1,25 @@
+{
+  "title": "Next.js Sample",
+  "auth": {
+    "sign-in": "Sign In",
+    "sign-out": "Sign Out"
+  },
+  "favorite": {
+    "favorite": "Favorite",
+    "get-stream-data": "Get favorites (Stream)",
+    "add-data": "add favorite",
+    "favorites-list": {
+      "document-id": "Document ID",
+      "message": "Message",
+      "date": "Date",
+      "user-id": "User ID"
+    }
+  },
+  "weather": {
+    "serch-bar-placeholder": "Enter here",
+    "title": "Weather in ",
+    "feels-like": "Feels like",
+    "humidity": "Humidity",
+    "winds-speed": "Winds"
+  }
+}

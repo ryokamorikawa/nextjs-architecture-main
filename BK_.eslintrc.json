@@ -1,0 +1,98 @@
+{
+  "root": true,
+
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+
+  "plugins": ["@typescript-eslint", "simple-import-sort"],
+
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+
+  "rules": {
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_",
+        "ignoreRestSiblings": true,
+        "destructuredArrayIgnorePattern": "^_"
+      }
+    ],
+
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
+
+    "react-hooks/exhaustive-deps": [
+      "warn",
+      {
+        "additionalHooks": "(^useDeep*)"
+      }
+    ],
+    "@typescript-eslint/consistent-type-imports": [
+      "warn",
+      {
+        "prefer": "type-imports",
+        "fixStyle": "inline-type-imports"
+      }
+    ],
+
+    "@typescript-eslint/naming-convention": [
+      "error",
+      // var,letはstrictCamelCaseを使用
+      {
+        "selector": "variable",
+        "format": ["strictCamelCase"]
+      },
+      // constはstrictCamelCase,StrictPascalCase,UPPER_CASEを使用
+      {
+        "selector": "variable",
+        "modifiers": ["const"],
+        "format": ["strictCamelCase", "StrictPascalCase", "UPPER_CASE"]
+      },
+      // 関数はstrictCamelCaseを使用、先頭のアンダースコア許容
+      {
+        "selector": "function",
+        "format": ["strictCamelCase"],
+        "leadingUnderscore": "allow"
+      },
+      // get,setはstrictCamelCaseを使用
+      {
+        "selector": "accessor",
+        "format": ["strictCamelCase"]
+      },
+      // 関数パラメーターはstrictCamelCaseを使用、先頭のアンダースコア許容
+      {
+        "selector": "parameter",
+        "format": ["strictCamelCase"],
+        "leadingUnderscore": "allow"
+      },
+      // typeはStrictPascalCase,UPPER_CASEを使用
+      {
+        "selector": "typeAlias",
+        "format": ["StrictPascalCase", "UPPER_CASE"]
+      },
+      // classはStrictPascalCaseを使用
+      {
+        "selector": "class",
+        "format": ["StrictPascalCase"]
+      },
+      // interfaceはStrictPascalCaseを使用
+      {
+        "selector": "interface",
+        "format": ["StrictPascalCase"]
+      }
+    ]
+  }
+}
